@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce</title>
+
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header  class="header" data-header>
+    <div class="container">
+
+      <a href="# " class="logo">
+        <ion-icon name="business-outline"></ion-icon> PT.Seikhlasnya
+      </a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Rumah</a>
+          </li>
+
+          <li>
+            <a href="#dijual" class="navbar-link" data-nav-link>Dijual</a>
+          </li>
+
+          <li>
+            <a href="#disewa" class="navbar-link" data-nav-link>DiSewa</a>
+          </li>
+
+          <li>
+            <a href="#tentang" class="navbar-link" data-nav-link>Tentang</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Kontak</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">Admin</a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article class="article">
+
+      <section class="section hero" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-bg">
+            <div class="hero-content">
+
+              <h1 class="h1 hero-title">
+                Kami akan membantu Anda menemukan <span class="span">Rumah</span> Idamanmu
+              </h1>
+
+              <p class="hero-text">
+                Plateform yang bagus untuk membeli dan menyewakan properti tanpa agen atau komisaris.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="hero-form-wrapper">
+            <div class="form-tab">
+
+              <button class="tab-btn active" data-tab-btn>Saya ingin Beli</button>
+              <button class="tab-btn" data-tab-btn>Saya ingin sewa</button>
+
+            </div>
+
+            <form action="" class="hero-form">
+
+              <div class="input-wrapper">
+
+                <label for="search" class="input-label">Cari : </label>
+
+                <input type="search" name="search" id="search" placeholder="Daerah, Kota, Alamat" required
+                  class="input-field">
+
+                <ion-icon name="search-outline"></ion-icon>
+
+              </div>
+
+              <div class="input-wrapper">
+                <label for="category" class="input-label">Pilih kategori:</label>
+
+                <select name="category" id="category" class="dropdown-list">
+
+                  <option value="house">Rumah</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="offices">Ruang Kantor</option>
+                  <option value="townhome">Tanah</option>
+                  <option value="townhome">Hotel</option>
+                  <option value="townhome">Toko</option>
+
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="Harga minimal" class="input-label">Harga minimal :</label>
+
+                <select name="Harga Minimal" id="Harga minimal" class="dropdown-list">
+
+                  <option value="Harga minimal">Harga minimal</option>
+                  <option value="500.000">500.000</option>
+                  <option value="1.000.000">1.000.000</option>
+                  <option value="2.000.000">2.000.000</option>
+                  <option value="3.000.000">3.000.000</option>
+                  <option value="4.000.000">4.000.000</option>
+                  <option value="5.000.000">5.000.000</option>
+                  <option value="6.000.000">6.000.000</option>
+
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="Maksimal Harga" class="input-label">Maksimal Harga :</label>
+
+                <select name="Maksimal Harga" id="Maksimal Harga" class="dropdown-list">
+
+                  <option value="Maksimal Harga">Maksimal Harga</option>
+                  <option value="1.000.000">10.000.000</option>
+                  <option value="2.000.000">20.000.000</option>
+                  <option value="3.000.000">30.000.000</option>
+                  <option value="4.000.000">40.000.000</option>
+                  <option value="5.000.000">50.000.000</option>
+                  <option value="6.000.000">60.000.000</option>
+
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Cari Properti</button>
+
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section id="tentang" class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+            <img src="./assets/images/about-banner.jpg" width="600" height="700" loading="lazy" alt="about banner"
+              class="img-cover">
+
+            <!-- <button class="play-btn" aria-label="play video">
+              <ion-icon name="play" aria-hidden="true"></ion-icon>
+            </button> -->
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Efisiensi. Transparansi. Kontrol.</h2>
+
+            <p class="section-text">
+              PT.Seikhlasnya mengembangkan platform untuk pasar yang memungkinkan pembeli dan penyewa dengan mudah
+              melakukan transaksi sendiri.
+              Platform ini mendorong efisiensi, transparansi biaya, dan kontrol ke tangan konsumen.
+              PT.Seikhlasnya adalah Real Estate Redefined.
+            </p>
+
+            <a href="#" class="btn btn-primary">Lihat Lainnya</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+
+          <h2 class="h2 section-title">Mengapa Menggunakan PT.Seikhlasnya</h2>
+
+          <p class="section-text">
+            Plateform yang bagus untuk membeli, menjual, dan menyewakan properti Anda tanpa agen atau komisaris
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Temukan Rumah Impian Anda</h3>
+
+                <p class="card-text">
+                  Banyak iklan apartemen dan rumah dijual di berbagai lokasi.
+                  Ketuk jari Anda pada layar lalu buka pintu rumah impian Anda mulai dari sini.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Cari Tempat Usaha</h3>
+
+                <p class="card-text">
+                  Sewa tempat usaha dan jual beli ruko menjadi lebih mudah. Penuhi kebutuhan bisnis dan investasi Anda
+                  dengan lebih cepat.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="key"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Kaya Fitur Pintar</h3>
+
+                <p class="card-text">
+                  Tersedia banyak iklan properti. Semua dapat Anda jelajah dan rencanakan Sekarang.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+<!-- Mulai Rumah Dijual -->
+      <section class="section property" aria-label="property" id="dijual">
+        <div class="container">
+          <br><br>
+          <h2 class="h2 section-title">Properti Unggulan Di Jual</h2>
+
+          <p class="section-text">
+            Platform hebat untuk membeli dan menyewakan properti Anda tanpa agen atau komisi apa pun.
+          </p>
+
+          <ul class="property-list">
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-1.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rumah Murah take over di beji Depok</a>
+                    <a href="#" class="card-title">Depok II, Beji, Depok</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 70 m²</span>
+                      <span class="item-text">LB 45 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Jual
+                      <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.300 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-2.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Asri Modern Minimalis Cluster Indah</a>
+                    <a href="#" class="card-title">Grend Wisata, Setu, Bekasi</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 59 m²</span>
+                      <span class="item-text">LB 35 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Jual
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.500 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-3.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Dijual Rumah dekat Universitas Garut </a>
+                    <a href="#" class="card-title">Tarogong Kidul, Garut</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 98 m²</span>
+                      <span class="item-text">LB 120 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Jual
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.600 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-4.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rumah Cluster di Tanggerang Selatan</a>
+                    <a href="#" class="card-title">Pondok Aren, Tanggerang Selatan</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 65 m²</span>
+                      <span class="item-text">LB 120 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">1 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Jual
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.750 Juta</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-5.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Perumahan Serpong Jaya</a>
+                    <a href="#" class="card-title">Serpong, Nora</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 65 m²</span>
+                      <span class="item-text">LB 60 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">1 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Jual
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.992,9 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-6.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Cluster Vasya di BSD</a>
+                    <a href="#" class="card-title">Pagedangan, Tanggerang</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 84 m²</span>
+                      <span class="item-text">LB 137 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Jual
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.3,39 Miliar</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+<!-- Selesai Rumah Dijual -->
+
+<!-- Mulai Rumah Disewa -->
+      <section class="section property" aria-label="property" id="disewa">
+        <div class="container">
+          <br><br>
+          <h2 class="h2 section-title">Properti Unggulan Untuk Di Sewa</h2>
+
+          <p class="section-text">
+            Platform hebat untuk membeli dan menyewakan properti Anda tanpa agen atau komisi apa pun.
+          </p>
+
+          <ul class="property-list">
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-1.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rumah Murah take over di beji Depok</a>
+                    <a href="#" class="card-title">Depok II, Beji, Depok</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 70 m²</span>
+                      <span class="item-text">LB 45 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Sewa / Tahun
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.65 Juta </span>
+                    </div>
+
+                    
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/properti-2.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Asri Modern Minimalis Cluster Indah</a>
+                    <a href="#" class="card-title">Grend Wisata, Setu, Bekasi</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 59 m²</span>
+                      <span class="item-text">LB 35 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Sewa / Tahun
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.70 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="assets/images/rumah_disewa_3.jpeg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Dijual Rumah dekat Universitas Garut </a>
+                    <a href="#" class="card-title">Tarogong Kidul, Garut</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 98 m²</span>
+                      <span class="item-text">LB 120 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Sewa / Tahun
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.40 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="assets/images/rumah_disewa_4.jpeg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rumah Cluster di Tanggerang Selatan</a>
+                    <a href="#" class="card-title">Pondok Aren, Tanggerang Selatan</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 65 m²</span>
+                      <span class="item-text">LB 120 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">1 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Sewa / Tahun
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.50 Juta</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="assets/images/rumah_disewa_5.jpeg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Perumahan Serpong Jaya</a>
+                    <a href="#" class="card-title">Serpong, Nora</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 65 m²</span>
+                      <span class="item-text">LB 60 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">1 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Sewa / Tahun
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.60 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/rumah_disewa_6.jpeg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Cluster Vasya di BSD</a>
+                    <a href="#" class="card-title">Pagedangan, Tanggerang</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">LT 84 m²</span>
+                      <span class="item-text">LB 137 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Tidur</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Kamar Mandi</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Harga Sewa / Tahun
+                        <a href="https://wa.me/+62895612951197"><img src="./assets/images/whatsapp.png" alt=""></a>
+                      </span>
+
+                      <span class="meta-text">Rp.100 Juta</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Rating</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+<!-- Selesai Rumah Disewa -->
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section id="contact" class="section contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Ada pertanyaan? Berhubungan!</h2>
+
+          <p class="section-text">
+            Platform hebat untuk membeli dan menyewakan properti Anda tanpa agen atau komisi apa pun.
+          </p>
+
+          <a href="https://wa.me/+62895612951197">
+            <button class="btn btn-primary">
+              <ion-icon name="call-outline"></ion-icon>
+  
+              <span class="span">Hubungi</span>
+            </button>
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="wrapper">
+            <h2 class="h2 section-title">Subscribe to Newsletter!</h2>
+
+            <p class="section-text">Subscribe to get latest updates and information.</p>
+          </div>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email :" aria-label="Enter your email"
+              required class="email-field">
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="business-outline"></ion-icon> PT.Seikhlasnya
+          </a>
+
+          <p class="footer-text">
+            Platform hebat untuk membeli dan menyewakan properti Anda tanpa agen atau komisi apa pun.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Perusahaan</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Tentang Kami</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Pelayanan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Penetapan Harga</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Blog</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Login</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Tautan</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Ketentuan Layanan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Kebijakan Pribadi</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Daftar</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Kontak</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Hubungi Kami</p>
+          </li>
+
+          <!-- <li class="footer-item">
+            <ion-icon name="location-outline"></ion-icon> -->
+
+          <!-- <address class="address">
+              C/54 Northwest Freeway,<br>
+              Suite 558,<br>
+              Houston, USA 485
+              <a href="#" class="address-link">View on Google map</a>
+            </address> -->
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <a href="mailto:contact@example.com" class="footer-link">PT.Seikhlasnya@example.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="tel:+62123456789" class="footer-link">+62123456789</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          <!-- &copy; 2022 Realvine. All Right Reserved by <a href="#" class="copyright-link">codewithsadee</a>. -->
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
